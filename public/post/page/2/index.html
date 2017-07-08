@@ -109,6 +109,26 @@
       
   <li class="sidebar-button">
     
+      <a class="sidebar-button-link " href="/">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="/about">
+    
+      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
       <a class="sidebar-button-link " href="/categories">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
@@ -134,26 +154,6 @@
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
       <span class="sidebar-button-desc">Archives</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/about">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-      
-      <span class="sidebar-button-desc">About</span>
-    </a>
-  </li>
-
-  <li class="sidebar-button">
-    
-      <a class="sidebar-button-link " href="/">
-    
-      <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-      
-      <span class="sidebar-button-desc">Home</span>
     </a>
   </li>
 
@@ -195,15 +195,15 @@
     
     <div class="postShorten-header">
       <h1 class="postShorten-title" itemprop="headline">
-        <a class="link-unstyled" href="/2015/06/welcome-to-tranquilpeak-0.3.1-beta/">
-          Welcome to Tranquilpeak 0.3.1-BETA
+        <a class="link-unstyled" href="/2015/07/hello-r-markdown/">
+          Hello R Markdown
         </a>
       </h1>
       <div class="postShorten-meta post-meta">
   
-    <time itemprop="datePublished" datetime="2015-06-15T00:00:00Z">
+    <time itemprop="datePublished" datetime="2015-07-23T21:13:14-05:00">
       
-  June 15, 2015
+  July 23, 2015
 
     </time>
   
@@ -212,9 +212,7 @@
   
     <span>in</span>
     
-      <a class="category-link" href="/categories/tranquilpeak">tranquilpeak</a>, 
-    
-      <a class="category-link" href="/categories/releases">releases</a>
+      <a class="category-link" href="/categories/r">R</a>
     
   
 
@@ -224,191 +222,52 @@
     </div>
     <div class="postShorten-excerpt" itemprop="articleBody">
       <p>
-        Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
+        <div id="r-markdown" class="section level1">
+<h1>R Markdown</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<p>You can embed an R code chunk like this:</p>
+<pre class="r"><code># Code borrowed from Leaflet R website
+library(geojsonio)
+library(leaflet)
+# File downloaded from the census website
+summary(cars)
+##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00
+fit &lt;- lm(dist ~ speed, data = cars)
+fit
+## 
+## Call:
+## lm(formula = dist ~ speed, data = cars)
+## 
+## Coefficients:
+## (Intercept)        speed  
+##     -17.579        3.932</code></pre>
+</div>
+<div id="including-plots" class="section level1">
+<h1>Including Plots</h1>
+<p>You can also embed plots. See Figure <a href="#fig:pie">1</a> for example:</p>
+<pre class="r"><code>par(mar = c(0, 1, 0, 1))
+pie(
+  c(280, 60, 20),
+  c(&#39;Sky&#39;, &#39;Sunny side of pyramid&#39;, &#39;Shady side of pyramid&#39;),
+  col = c(&#39;#0292D8&#39;, &#39;#F7EA39&#39;, &#39;#C4B632&#39;),
+  init.angle = -50, border = NA
+)</code></pre>
+<div class="figure"><span id="fig:pie"></span>
+<img src="/post/2015-07-23-r-rmarkdown_files/figure-html/pie-1.png" alt="A fancy pie chart." width="672" />
+<p class="caption">
+Figure 1: A fancy pie chart.
 </p>
+</div>
+</div>
 
-<p><img src="/img/showcase.png" alt="Tranquilpeak" />
-Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-<!-- toc --></p>
-
-<h1 id="tranquilpeak">Tranquilpeak</h1>
-
-<!--[![Join the chat at https://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak](https://badges.gitter.im/Join%20Chat.svg)](http s://gitter.im/LouisBarranqueiro/hexo-theme-tranquilpeak?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)-->
-
-<p>A gorgeous responsive theme for Hugo blog framework</p>
-
-<p><a href="https://tranquilpeak.kakawait.com"><img src="/img/showcase.png" alt="Tranquilpeak" /></a></p>
-
-<h2 id="alpha-beta-versions">Alpha/Beta versions</h2>
-
-<p><strong>ATTENTION</strong> during <em>alpha</em> or <em>beta</em> <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/milestones">versions</a> breaking changes are possible on config file.</p>
-
-<p>You can track <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/issues?q=is%3Aissue+is%3Aopen+label%3A%22breaking+changes%22">breaking changes label</a>.</p>
-
-<p>How can I migrate my current version? Please read <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/CHANGELOG.md">CHANGELOG.md</a>.</p>
-
-<h2 id="credits">Credits</h2>
-
-<p><em>Hugo</em> version of Tranquilpeak is a based on original <em>Hexo</em> version <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak">https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak</a>. This version is simply a port to <em>Hugo</em> static site generator.</p>
-
-<p>Please all the credit should be attributed to <a href="https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak">original <em>Hexo</em> version</a> and its author <a href="https://github.com/LouisBarranqueiro">Louis Barranqueiro</a>.</p>
-
-<p><em>Hugo</em> version keeps every <code>.js</code> and <code>.css</code> files untouched from original <em>Hexo</em> version in order to enjoy futur original <em>Hexo</em> version updates or features!</p>
-
-<h2 id="summary">Summary</h2>
-
-<ul>
-<li><a href="#general">General</a></li>
-<li><a href="#features">Features</a></li>
-<li><a href="#quick-start">Quick start</a></li>
-<li><a href="#demo">Demo</a></li>
-<li><a href="#documentation">Documentation</a></li>
-<li><a href="#contributing">Contributing</a></li>
-<li><a href="#showcase">Showcase</a></li>
-<li><a href="#license">License</a></li>
-</ul>
-
-<h2 id="general">General</h2>
-
-<ul>
-<li><strong>Authors</strong>: <a href="https://github.com/LouisBarranqueiro">Louis Barranqueiro (LouisBarranqueiro)</a> and <a href="https://github.com/kakawait">Thibaud Leprêtre (kakawait)</a></li>
-<li><strong>Version</strong>: 0.3.1-BETA (based on Hexo version 1.9.1)</li>
-<li><strong>Compatibility</strong>: Hugo v0.20.1</li>
-</ul>
-
-<h2 id="features">Features</h2>
-
-<p><strong>General features:</strong></p>
-
-<ul>
-<li>Fully responsive</li>
-<li>Optimized for tablets &amp; mobiles</li>
-<li>Configurable menu of the sidebar</li>
-<li>Pages to filter tags, categories and archives</li>
-<li>Background cover image</li>
-<li>Beautiful about page</li>
-<li>Support Open Graph protocol</li>
-<li>Easily customizable (fonts, colors, layout elements, code coloration, etc..)</li>
-<li>Documentations</li>
-<li>Support internationalization (i18)
-<br /></li>
-</ul>
-
-<p><strong>Posts features:</strong></p>
-
-<ul>
-<li>Thumbnail image</li>
-<li>Cover image</li>
-<li>Responsive videos &amp; images</li>
-<li>Sharing options</li>
-<li>Navigation menu</li>
-<li>GitHub theme for code highlighting (customizable)</li>
-<li>Image gallery</li>
-<li>Tags for images (FancyBox), wide images, tabbed code blocks, highlighted text, alerts</li>
-<li>Table of contents<br />
-<br /></li>
-</ul>
-
-<p><strong>Integrated services:</strong></p>
-
-<ul>
-<li>Disqus</li>
-<li>Google analytics</li>
-<li>Gravatar</li>
-<li>Facebook Insights</li>
-</ul>
-
-<h3 id="missing-features-from-original-hexo-version">Missing features from original <em>Hexo</em> version</h3>
-
-<ul class="task-list">
-<li><input type="checkbox" disabled class="task-list-item"> Duoshuo</li>
-<li><input type="checkbox" disabled class="task-list-item"> Baidu analytics</li>
-<li><input type="checkbox" disabled class="task-list-item"> Algolia (<a href="https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8">https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8</a>)</li>
-<li><input type="checkbox" disabled class="task-list-item"> Pagination custumization <code>tagPagination</code>, <code>categoryPagination</code> and <code>archivePagination</code> (<a href="https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17">https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17</a>)</li>
-</ul>
-
-<p><strong>ATTENTION</strong> following features will not be possible due to <em>Hugo</em> limitations</p>
-
-<ul>
-<li>Archives pages by years <code>/archives/2015</code></li>
-<li>Archives pages by month <code>/archives/2015/01</code></li>
-</ul>
-
-<h2 id="quick-start">Quick start</h2>
-
-<p><strong>Please read <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md">user documentation</a>, it&rsquo;s short and useful to discover all features and possibilities of the theme, especially the  <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts">writing posts</a> section</strong></p>
-
-<h3 id="for-people-who-want-to-use-the-original-version-of-tranquilpeak-without-modifications-users">For people who want to use the original version of Tranquilpeak without modifications (users)</h3>
-
-<p>Go to the directory where you have your Hugo site and run:</p>
-
-<pre><code class="language-shell">mkdir themes
-cd themes
-git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
-</code></pre>
-
-<p>After installing the Tranquilpeak theme successfully, we recommend you to take a look at the <a href="exampleSite">exampleSite</a> directory. You will find a working Hugo site configured with the Universal theme that you can use as a starting point for your site.</p>
-
-<p>First, let&rsquo;s take a look at the <a href="exampleSite/config.tom">config.toml</a>. It will be useful to learn how to customize your site. Feel free to play around with the settings.</p>
-
-<p>More information on <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md">user documentation</a> to install and configure the theme</p>
-
-<h3 id="for-people-who-want-to-create-their-own-version-of-tranquilpeak-developers">For people who want to create their own version of tranquilpeak (developers)</h3>
-
-<ol>
-<li>Run <code>git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git</code><br /></li>
-<li>Follow <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md">developer documentation</a> to edit and build the theme</li>
-</ol>
-
-<h2 id="demo">Demo</h2>
-
-<p>Check out Tranquilpeak theme in live : <a href="https://tranquilpeak.kakawait.com">hugo-tranquilpeak-theme demo</a></p>
-
-<h2 id="showcase">Showcase</h2>
-
-<p>Checkout showcase <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/wiki/Showcase">https://github.com/kakawait/hugo-tranquilpeak-theme/wiki/Showcase</a></p>
-
-<h3 id="how-can-i-add-my-site-to-the-showcase">How can I add my site to the showcase</h3>
-
-<p><strong>Click <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new?title=Add%20my%20blog%20into%20the%20showcase&amp;body=Hey,%20add%20my%20blog%20into%20the%20showcase:">here</a> to add your blog into the showcase.</strong></p>
-
-<p>Please fill the following information:</p>
-
-<ol>
-<li>public url</li>
-<li>name (optional)</li>
-<li>description (optional)</li>
-</ol>
-
-<h2 id="documentation">Documentation</h2>
-
-<p>If it&rsquo;s your first time using Hugo, please check <a href="https://gohugo.io/overview/introduction/">Hugo official documentation</a></p>
-
-<h3 id="for-users">For users</h3>
-
-<p>To install and configure the theme, consult the following documentation : <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md">user documentation</a></p>
-
-<h3 id="for-developers">For developers</h3>
-
-<p>To understand the code, the workflow and edit the theme, consult the following documentation : <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md">developer documentation</a></p>
-
-<h2 id="contributing">Contributing</h2>
-
-<p>All kinds of contributions (enhancements, new features, documentation &amp; code improvements, issues &amp; bugs reporting) are welcome.</p>
-
-<p>As explained on <a href="#credits">Credits</a>:</p>
-
-<blockquote>
-<p><em>Hugo</em> version keeps every <code>.js</code> and <code>.css</code> files untouched from original <em>Hexo</em> version in order to enjoy futur original <em>Hexo</em> version updates or features!</p>
-</blockquote>
-
-<p>That mean I would keep a stronge dependency with original <em>Hexo</em> theme. Thus if you want to suggest any modifications on <code>.css</code> or <code>.js</code> files <strong>I will submit those changes to original <em>Hexo</em> theme</strong> (except if it&rsquo;s really specific to <em>Hugo</em> bugs that is not present on <em>Hexo</em>).</p>
-
-<h2 id="license">License</h2>
-
-<p>hugo-tranquilpeak-theme is released under the terms of the <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/LICENSE">GNU General Public License v3.0</a>.
         <br>
-        <a href="/2015/06/welcome-to-tranquilpeak-0.3.1-beta/" class="postShorten-excerpt_link link">Continue reading</a>
+        <a href="/2015/07/hello-r-markdown/" class="postShorten-excerpt_link link">Continue reading</a>
         
       </p>
     </div>
@@ -429,14 +288,7 @@ git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
         </li>
       
       
-        <li class="pagination-next">
-          <a class="btn btn--default btn--small" href="/post/page/3/">
-            <span>OLDER POSTS</span>
-            <i class="fa fa-angle-right text-base icon-ml"></i>
-          </a>
-        </li>
-      
-      <li class="pagination-number">page 2 of 13</li>
+      <li class="pagination-number">page 2 of 2</li>
     </ul>
   </div>
 
@@ -490,6 +342,24 @@ git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
           <div class="media">
             
             <div class="media-body">
+              <a class="link-unstyled" href="/2017/07/test-post/">
+                <h3 class="media-heading">Test Post</h3>
+              </a>
+              <span class="media-meta">
+                <span class="media-date text-small">
+                  Jul 7, 2017
+                </span>
+              </span>
+              <div class="media-content hide-xs font-merryweather">This is a test R markdown post to show a leaflet interactive plot.
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojson_read(&quot;../../data/gz_2010_us_040_00_5m.geojson&quot;,method=&quot;local&quot;, what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.</div>
+            </div>
+            <div style="clear:both;"></div>
+            <hr>
+          </div>
+        
+          <div class="media">
+            
+            <div class="media-body">
               <a class="link-unstyled" href="/2015/07/hello-r-markdown/">
                 <h3 class="media-heading">Hello R Markdown</h3>
               </a>
@@ -500,7 +370,7 @@ git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
               </span>
               <div class="media-content hide-xs font-merryweather">R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</div>
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitesummary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -509,159 +379,15 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="/2015/06/welcome-to-tranquilpeak-0.3.1-beta/">
-                <h3 class="media-heading">Welcome to Tranquilpeak 0.3.1-BETA</h3>
+              <a class="link-unstyled" href="/post/">
+                <h3 class="media-heading">Posts</h3>
               </a>
               <span class="media-meta">
                 <span class="media-date text-small">
-                  Jun 6, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak is a gorgeous responsive theme for Hugo blog framework. It has many features and integrated services to improve user experience.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2015/05/elements-showcase/">
-                <h3 class="media-heading">Elements showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  May 5, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&rsquo;s simple and elegant.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2015/05/cover-image-showcase/">
-                <h3 class="media-heading">Cover image showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  May 5, 2015
+                  Jul 7, 2017
                 </span>
               </span>
               <div class="media-content hide-xs font-merryweather"></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2015/03/highlighted-code-showcase/">
-                <h3 class="media-heading">highlighted code showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Mar 3, 2015
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Tranquilpeak Hugo theme have its own theme to highlight source code. It&rsquo;s based on GitHub theme: simple and elegant. Check out how it sublimate source codes.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/10/tags-plugins-showcase/">
-                <h3 class="media-heading">Tags plugins showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Oct 10, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how tag plugins are displayed. See <a href="https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#tags">docs</a> for more info.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/08/hidden-social-section-showcase/">
-                <h3 class="media-heading">Hidden social section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the social section is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/08/hidden-tag-section-showcase/">
-                <h3 class="media-heading">Hidden tag section showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the tag section is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/08/hidden-pagination-showcase/">
-                <h3 class="media-heading">Hidden pagination showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>This post is used to show how a site looks if the pagination is hidden.
-</p></div>
-            </div>
-            <div style="clear:both;"></div>
-            <hr>
-          </div>
-        
-          <div class="media">
-            
-            <div class="media-body">
-              <a class="link-unstyled" href="/2014/08/video-integrations-showcase/">
-                <h3 class="media-heading">Video integrations showcase</h3>
-              </a>
-              <span class="media-meta">
-                <span class="media-date text-small">
-                  Aug 8, 2014
-                </span>
-              </span>
-              <div class="media-content hide-xs font-merryweather"><p>Youtube and Vimeo videos are easily integrated thanks to tags plugins. Of course, you can add video other platforms like dailymotion.
-</p></div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -674,7 +400,7 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
          data-message-zero="no post found"
          data-message-one="1 post found"
          data-message-other="{n} posts found">
-         14 posts found
+         3 posts found
       </p>
     </div>
   </div>

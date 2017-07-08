@@ -1,0 +1,57 @@
+---
+title: Test Post
+author: Zoe
+date: '2017-07-07'
+slug: test-post
+categories:
+  - R
+tags:
+  - R Markdown
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+This is a test R markdown post to show a leaflet interactive plot.
+```{r, message=F}
+# Code borrowed from Leaflet R website
+library(geojsonio)
+library(leaflet)
+
+# File downloaded from the census website
+states <- geojson_read("../../data/gz_2010_us_040_00_5m.geojson",
+                       method="local", what = "sp")
+
+bins <- c(seq(1,200000,40000),Inf)
+pal <- colorBin("YlOrRd", domain = states$CENSUSAREA, bins = bins)
+
+labels <- sprintf(
+  "<strong>%s</strong><br/>%g people / mi<sup>2</sup>",
+  states$NAME, states$CENSUSAREA
+) %>% lapply(htmltools::HTML)
+
+leaflet(states) %>%
+  setView(-96, 37.8, 4) %>%
+  addTiles("Zoe") %>%
+  addPolygons(
+    fillColor = ~pal(CENSUSAREA),
+    weight = 2,
+    opacity = 1,
+    color = "white",
+    dashArray = "3",
+    fillOpacity = 0.7,
+    highlight = highlightOptions(
+      weight = 5,
+      color = "#666",
+      dashArray = "",
+      fillOpacity = 0.7,
+      bringToFront = TRUE),
+    label = labels,
+    labelOptions = labelOptions(
+      style = list("font-weight" = "normal", padding = "3px 8px"),
+      textsize = "15px",
+      direction = "auto")) %>%
+  addLegend(pal = pal, values = ~CENSUSAREA, opacity = 0.7, title = NULL,
+            position = "bottomright")
+```
+
