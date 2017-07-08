@@ -126,7 +126,7 @@
                 </span>
               </span>
               <div class="media-content hide-xs font-merryweather">This is a test R markdown post to show a leaflet interactive plot.
-# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/static/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.8, 4) %&gt;%addTiles(&quot;Zoe&quot;) %&gt;%addPolygons(fillColor = ~pal(CENSUSAREA),weight = 2,opacity = 1,color = &quot;white&quot;,dashArray = &quot;3&quot;,fillOpacity = 0.</div>
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/static/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
