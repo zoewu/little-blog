@@ -223,45 +223,13 @@
     <div class="postShorten-excerpt" itemprop="articleBody">
       <p>
         <p>This is a test R markdown post to show a leaflet interactive plot.</p>
-<pre class="r"><code># Code borrowed from Leaflet R website
-library(geojsonio)
-library(leaflet)</p>
+<pre class="r"><code># Test codes</p>
 
-<h1 id="file-downloaded-from-the-census-website">File downloaded from the census website</h1>
+<h1 id="test">Test</h1>
 
-<p>states &lt;- geojsonio::geojson_read(&quot;<a href="https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;">https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;</a>, method = &quot;web&quot;,what = &quot;sp&quot;)</p>
+<h1 id="test-1">Test</h1>
 
-<p>bins &lt;- c(seq(1,200000,40000),Inf)
-pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)</p>
-
-<p>labels &lt;- sprintf(
-  &quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,
-  states$NAME, states$CENSUSAREA
-) %&gt;% lapply(htmltools::HTML)</p>
-
-<p>leaflet(states) %&gt;%
-  setView(-96, 37.8, 4) %&gt;%
-  addTiles(&quot;Zoe&quot;) %&gt;%
-  addPolygons(
-    fillColor = ~pal(CENSUSAREA),
-    weight = 2,
-    opacity = 1,
-    color = &quot;white&quot;,
-    dashArray = &quot;3&quot;,
-    fillOpacity = 0.7,
-    highlight = highlightOptions(
-      weight = 5,
-      color = &quot;#666&quot;,
-      dashArray = &quot;&quot;,
-      fillOpacity = 0.7,
-      bringToFront = TRUE),
-    label = labels,
-    labelOptions = labelOptions(
-      style = list(&quot;font-weight&quot; = &quot;normal&quot;, padding = &quot;3px 8px&quot;),
-      textsize = &quot;15px&quot;,
-      direction = &quot;auto&quot;)) %&gt;%
-  addLegend(pal = pal, values = ~CENSUSAREA, opacity = 0.7, title = NULL,
-            position = &quot;bottomright&quot;)</code></pre>
+<p>1+1</code></pre>
         <br>
         <a href="/2017/07/test-post/" class="postShorten-excerpt_link link">Continue reading</a>
         
@@ -347,7 +315,7 @@ pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)<
                 </span>
               </span>
               <div class="media-content hide-xs font-merryweather">This is a test R markdown post to show a leaflet interactive plot.
-# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.8, 4) %&gt;%addTiles(&quot;Zoe&quot;) %&gt;%addPolygons(fillColor = ~pal(CENSUSAREA),weight = 2,opacity = 1,color = &quot;white&quot;,dashArray = &quot;3&quot;,fillOpacity = 0.</div>
+# Test codes# Test# Test1+1</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
