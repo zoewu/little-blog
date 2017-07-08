@@ -25,14 +25,14 @@
     <meta name="author" content="Zoe">
     <meta name="keywords" content="">
 
-    <link rel="icon" href="http://little.netlify.com/favicon.png">
+    <link rel="icon" href="/favicon.png">
     
 
     
     <meta name="description" content="This is a test R markdown post to show a leaflet interactive plot.
-# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojson_read(&quot;../../data/gz_2010_us_040_00_5m.geojson&quot;,method=&quot;local&quot;, what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.">
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.">
     <meta property="og:description" content="This is a test R markdown post to show a leaflet interactive plot.
-# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojson_read(&quot;../../data/gz_2010_us_040_00_5m.geojson&quot;,method=&quot;local&quot;, what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.">
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="Test Post">
     <meta property="og:url" content="/2017/07/test-post/">
@@ -40,7 +40,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Little">
     <meta name="twitter:description" content="This is a test R markdown post to show a leaflet interactive plot.
-# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojson_read(&quot;../../data/gz_2010_us_040_00_5m.geojson&quot;,method=&quot;local&quot;, what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.">
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.">
     
     
 
@@ -48,7 +48,7 @@
     
 
     
-      <meta property="og:image" content="http://little.netlify.com/img/icon.png">
+      <meta property="og:image" content="/img/icon.png">
     
 
     
@@ -63,10 +63,10 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.css" />
     
     
-    <link rel="stylesheet" href="http://little.netlify.com/css/style-u6mk0ojoywresbx8iepslrmmhl4stuhrsxuwhkpwrkrx7mryjcaimasnk4pi.min.css" />
+    <link rel="stylesheet" href="/css/style-u6mk0ojoywresbx8iepslrmmhl4stuhrsxuwhkpwrkrx7mryjcaimasnk4pi.min.css" />
     
     
-      <link rel="stylesheet" href="http://little.netlify.com/css/mytheme.css">
+      <link rel="stylesheet" href="/css/mytheme.css">
     
 
     
@@ -80,17 +80,17 @@
       <header id="header" data-behavior="5">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="http://little.netlify.com/">Little</a>
+    <a class="header-title-link" href="/">Little</a>
   </div>
   
     
       <a class="header-right-picture "
-         href="http://little.netlify.com/#home">
+         href="/#home">
     
     
     
       
-        <img class="header-picture" src="http://little.netlify.com/img/icon.png" alt="Author&#39;s picture" />
+        <img class="header-picture" src="/img/icon.png" alt="Author&#39;s picture" />
       
     
     </a>
@@ -101,8 +101,8 @@
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
-        <a href="http://little.netlify.com/about">
-          <img class="sidebar-profile-picture" src="http://little.netlify.com/img/icon.png" alt="Author&#39;s picture" />
+        <a href="/about">
+          <img class="sidebar-profile-picture" src="/img/icon.png" alt="Author&#39;s picture" />
         </a>
         <h4 class="sidebar-profile-name">Zoe</h4>
         
@@ -114,7 +114,7 @@
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://little.netlify.com/">
+      <a class="sidebar-button-link " href="/">
     
       <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       
@@ -124,7 +124,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://little.netlify.com/about">
+      <a class="sidebar-button-link " href="/about">
     
       <i class="sidebar-button-icon fa fa-lg fa-question"></i>
       
@@ -134,7 +134,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://little.netlify.com/categories">
+      <a class="sidebar-button-link " href="/categories">
     
       <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       
@@ -144,7 +144,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://little.netlify.com/tags">
+      <a class="sidebar-button-link " href="/tags">
     
       <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       
@@ -154,7 +154,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://little.netlify.com/archives">
+      <a class="sidebar-button-link " href="/archives">
     
       <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
       
@@ -170,7 +170,7 @@
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://little.netlify.com/index.xml">
+      <a class="sidebar-button-link " href="/index.xml">
     
       <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       
@@ -210,7 +210,7 @@
   
     <span>in</span>
     
-      <a class="category-link" href="http://little.netlify.com/categories/r">R</a>
+      <a class="category-link" href="/categories/r">R</a>
     
   
 
@@ -221,16 +221,16 @@
           
           <div class="post-content markdown" itemprop="articleBody">
             <div class="main-content-wrap">
-              <script src="http://little.netlify.com/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
-<script src="http://little.netlify.com/rmarkdown-libs/jquery/jquery.min.js"></script>
-<link href="http://little.netlify.com/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
-<script src="http://little.netlify.com/rmarkdown-libs/leaflet/leaflet.js"></script>
-<link href="http://little.netlify.com/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
-<link href="http://little.netlify.com/rmarkdown-libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
-<script src="http://little.netlify.com/rmarkdown-libs/leaflet-label/leaflet.label.js"></script>
-<script src="http://little.netlify.com/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
-<script src="http://little.netlify.com/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
-<script src="http://little.netlify.com/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
+              <script src="/rmarkdown-libs/htmlwidgets/htmlwidgets.js"></script>
+<script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
+<link href="/rmarkdown-libs/leaflet/leaflet.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet/leaflet.js"></script>
+<link href="/rmarkdown-libs/leafletfix/leafletfix.css" rel="stylesheet" />
+<link href="/rmarkdown-libs/leaflet-label/leaflet.label.css" rel="stylesheet" />
+<script src="/rmarkdown-libs/leaflet-label/leaflet.label.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4-compressed.js"></script>
+<script src="/rmarkdown-libs/Proj4Leaflet/proj4leaflet.js"></script>
+<script src="/rmarkdown-libs/leaflet-binding/leaflet.js"></script>
 
 
 <p>This is a test R markdown post to show a leaflet interactive plot.</p>
@@ -239,8 +239,7 @@ library(geojsonio)
 library(leaflet)
 
 # File downloaded from the census website
-states &lt;- geojson_read(&quot;../../data/gz_2010_us_040_00_5m.geojson&quot;,
-                       method=&quot;local&quot;, what = &quot;sp&quot;)
+states &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)
 
 bins &lt;- c(seq(1,200000,40000),Inf)
 pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)
@@ -287,7 +286,7 @@ leaflet(states) %&gt;%
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="http://little.netlify.com//tags/r-markdown/">R Markdown</a>
+  <a class="tag tag--primary tag--small" href="//tags/r-markdown/">R Markdown</a>
 
                   </div>
                 
@@ -307,7 +306,7 @@ leaflet(states) %&gt;%
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://little.netlify.com/2015/07/hello-r-markdown/" data-tooltip="Hello R Markdown">
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/hello-r-markdown/" data-tooltip="Hello R Markdown">
           
             <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
             <i class="fa fa-angle-right"></i>
@@ -374,7 +373,7 @@ leaflet(states) %&gt;%
         </li>
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://little.netlify.com/2015/07/hello-r-markdown/" data-tooltip="Hello R Markdown">
+            <a class="post-action-btn btn btn--default tooltip--top" href="/2015/07/hello-r-markdown/" data-tooltip="Hello R Markdown">
           
             <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
             <i class="fa fa-angle-right"></i>
@@ -414,17 +413,17 @@ leaflet(states) %&gt;%
       <div id="share-options-bar" class="share-options-bar" data-behavior="5">
   <ul class="share-options">
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http%3a%2f%2flittle.netlify.com%2f2017%2f07%2ftest-post%2f">
+      <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=%2f2017%2f07%2ftest-post%2f">
         <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flittle.netlify.com%2f2017%2f07%2ftest-post%2f">
+      <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=%2f2017%2f07%2ftest-post%2f">
         <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
       </a>
     </li>
     <li class="share-option">
-      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3a%2f%2flittle.netlify.com%2f2017%2f07%2ftest-post%2f">
+      <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=%2f2017%2f07%2ftest-post%2f">
         <i class="fa fa-twitter"></i><span>Share on Twitter</span>
       </a>
     </li>
@@ -439,7 +438,7 @@ leaflet(states) %&gt;%
       <i class="fa fa-remove"></i>
     </div>
     
-      <img id="about-card-picture" src="http://little.netlify.com/img/icon.png" alt="Author&#39;s picture" />
+      <img id="about-card-picture" src="/img/icon.png" alt="Author&#39;s picture" />
     
     <h4 id="about-card-name">Zoe</h4>
     
@@ -472,7 +471,7 @@ leaflet(states) %&gt;%
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="http://little.netlify.com/2017/07/test-post/">
+              <a class="link-unstyled" href="/2017/07/test-post/">
                 <h3 class="media-heading">Test Post</h3>
               </a>
               <span class="media-meta">
@@ -481,7 +480,7 @@ leaflet(states) %&gt;%
                 </span>
               </span>
               <div class="media-content hide-xs font-merryweather">This is a test R markdown post to show a leaflet interactive plot.
-# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojson_read(&quot;../../data/gz_2010_us_040_00_5m.geojson&quot;,method=&quot;local&quot;, what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.</div>
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)bins &lt;- c(seq(1,200000,40000),Inf)pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)labels &lt;- sprintf(&quot;&lt;strong&gt;%s&lt;/strong&gt;&lt;br/&gt;%g people / mi&lt;sup&gt;2&lt;/sup&gt;&quot;,states$NAME, states$CENSUSAREA) %&gt;% lapply(htmltools::HTML)leaflet(states) %&gt;%setView(-96, 37.</div>
             </div>
             <div style="clear:both;"></div>
             <hr>
@@ -490,7 +489,7 @@ leaflet(states) %&gt;%
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="http://little.netlify.com/2015/07/hello-r-markdown/">
+              <a class="link-unstyled" href="/2015/07/hello-r-markdown/">
                 <h3 class="media-heading">Hello R Markdown</h3>
               </a>
               <span class="media-meta">
@@ -509,7 +508,7 @@ You can embed an R code chunk like this:
           <div class="media">
             
             <div class="media-body">
-              <a class="link-unstyled" href="http://little.netlify.com/post/">
+              <a class="link-unstyled" href="/post/">
                 <h3 class="media-heading">Posts</h3>
               </a>
               <span class="media-meta">
@@ -544,7 +543,7 @@ You can embed an R code chunk like this:
 <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.4/helpers/jquery.fancybox-thumbs.min.js"></script>
 
 
-<script src="http://little.netlify.com/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
+<script src="/js/script-wl33z0n6ocaypepiqrazthtivfrliqijej4rq8ek8gvrv1awftmgjuv8k4zc.min.js"></script>
 
 <script>
 $(document).ready(function() {
@@ -569,7 +568,7 @@ $(document).ready(function() {
     
       <script>
         var disqus_config = function () {
-          this.page.url = 'http:\/\/little.netlify.com\/2017\/07\/test-post\/';
+          this.page.url = '\/2017\/07\/test-post\/';
           
             this.page.identifier = '\/2017\/07\/test-post\/'
           

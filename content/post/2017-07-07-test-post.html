@@ -33,8 +33,7 @@ library(geojsonio)
 library(leaflet)
 
 # File downloaded from the census website
-states &lt;- geojson_read(&quot;../../data/gz_2010_us_040_00_5m.geojson&quot;,
-                       method=&quot;local&quot;, what = &quot;sp&quot;)
+states &lt;- geojsonio::geojson_read(&quot;https://raw.githubusercontent.com/zoewu/little-blog/master/data/gz_2010_us_040_00_5m.geojson&quot;, method = &quot;web&quot;,what = &quot;sp&quot;)
 
 bins &lt;- c(seq(1,200000,40000),Inf)
 pal &lt;- colorBin(&quot;YlOrRd&quot;, domain = states$CENSUSAREA, bins = bins)
