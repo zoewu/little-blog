@@ -19,7 +19,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 ```
 
 This is a test R markdown post to show a leaflet interactive plot.
-```{r, message=F}
+```{r, message=F, eval=F}
 # Code borrowed from Leaflet R website
 library(geojsonio)
 library(leaflet)
