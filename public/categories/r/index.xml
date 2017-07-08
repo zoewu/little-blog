@@ -18,7 +18,7 @@
       
       <guid>/2017/07/test-post/</guid>
       <description>This is a test R markdown post to show a leaflet interactive plot.
-# Test codes# Test# Test1+1</description>
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &amp;lt;- geojsonio::geojson_read(&amp;quot;https://raw.githubusercontent.com/zoewu/little-blog/master/static/gz_2010_us_040_00_5m.geojson&amp;quot;, method = &amp;quot;web&amp;quot;,what = &amp;quot;sp&amp;quot;)bins &amp;lt;- c(seq(1,200000,40000),Inf)pal &amp;lt;- colorBin(&amp;quot;YlOrRd&amp;quot;, domain = states$CENSUSAREA, bins = bins)labels &amp;lt;- sprintf(&amp;quot;&amp;lt;strong&amp;gt;%s&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;%g people / mi&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt;&amp;quot;,states$NAME, states$CENSUSAREA) %&amp;gt;% lapply(htmltools::HTML)leaflet(states) %&amp;gt;%setView(-96, 37.8, 4) %&amp;gt;%addTiles(&amp;quot;Zoe&amp;quot;) %&amp;gt;%addPolygons(fillColor = ~pal(CENSUSAREA),weight = 2,opacity = 1,color = &amp;quot;white&amp;quot;,dashArray = &amp;quot;3&amp;quot;,fillOpacity = 0.</description>
     </item>
     
     <item>
