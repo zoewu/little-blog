@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization on Little</title>
+    <link>/tags/visualization/</link>
+    <description>Recent content in Visualization on Little</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get Started</title>
+      <link>/2017/07/get-started/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/2017/07/get-started/</guid>
+      <description>This is a test R markdown post to show a leaflet interactive plot.
+# Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &amp;lt;- geojson_read(&amp;quot;../../data/gz_2010_us_040_00_5m.geojson&amp;quot;,method=&amp;quot;local&amp;quot;, what = &amp;quot;sp&amp;quot;)bins &amp;lt;- c(seq(1,200000,40000),Inf)pal &amp;lt;- colorBin(&amp;quot;YlOrRd&amp;quot;, domain = states$CENSUSAREA, bins = bins)labels &amp;lt;- sprintf(&amp;quot;&amp;lt;strong&amp;gt;%s&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;%g people / mi&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt;&amp;quot;,states$NAME, states$CENSUSAREA) %&amp;gt;% lapply(htmltools::HTML)leaflet(states) %&amp;gt;%setView(-96, 37.</description>
+    </item>
+    
+  </channel>
+</rss>
