@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Markdown on Little</title>
-    <link>/tags/r-markdown/</link>
+    <link>http://little.netlify.com/tags/r-markdown/</link>
     <description>Recent content in R Markdown on Little</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://little.netlify.com/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Test Post</title>
-      <link>/2017/07/test-post/</link>
+      <link>http://little.netlify.com/2017/07/test-post/</link>
       <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>/2017/07/test-post/</guid>
+      <guid>http://little.netlify.com/2017/07/test-post/</guid>
       <description>This is a test R markdown post to show a leaflet interactive plot.
 # Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitestates &amp;lt;- geojson_read(&amp;quot;../../data/gz_2010_us_040_00_5m.geojson&amp;quot;,method=&amp;quot;local&amp;quot;, what = &amp;quot;sp&amp;quot;)bins &amp;lt;- c(seq(1,200000,40000),Inf)pal &amp;lt;- colorBin(&amp;quot;YlOrRd&amp;quot;, domain = states$CENSUSAREA, bins = bins)labels &amp;lt;- sprintf(&amp;quot;&amp;lt;strong&amp;gt;%s&amp;lt;/strong&amp;gt;&amp;lt;br/&amp;gt;%g people / mi&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt;&amp;quot;,states$NAME, states$CENSUSAREA) %&amp;gt;% lapply(htmltools::HTML)leaflet(states) %&amp;gt;%setView(-96, 37.</description>
     </item>
     
     <item>
       <title>Hello R Markdown</title>
-      <link>/2015/07/hello-r-markdown/</link>
+      <link>http://little.netlify.com/2015/07/hello-r-markdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>/2015/07/hello-r-markdown/</guid>
+      <guid>http://little.netlify.com/2015/07/hello-r-markdown/</guid>
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 # Code borrowed from Leaflet R websitelibrary(geojsonio)library(leaflet)# File downloaded from the census websitesummary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.</description>
